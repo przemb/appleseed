@@ -148,6 +148,7 @@ if (CMAKE_SYSTEM_NAME STREQUAL "Windows")
 else ()
     set (USE_FIND_PACKAGE_FOR_EMBREE        ON)
     set (USE_FIND_PACKAGE_FOR_EXR           ON)
+    #set (USE_FIND_PACKAGE_FOR_LZ4           OFF)
     set (USE_FIND_PACKAGE_FOR_LZ4           ON)
     set (USE_FIND_PACKAGE_FOR_OCIO          ON)
     set (USE_FIND_PACKAGE_FOR_OIIO          ON)
@@ -165,7 +166,7 @@ option (USE_STATIC_OCIO                     "Use static OpenColorIO libraries"  
 option (USE_STATIC_OIIO                     "Use static OpenImageIO libraries"                          ON)
 option (USE_STATIC_OSL                      "Use static OpenShadingLanguage libraries"                  ON)
 
-option (WARNINGS_AS_ERRORS                  "Treat compiler warnings as errors"                         ON)
+option (WARNINGS_AS_ERRORS                  "Treat compiler warnings as errors"                         OFF)
 option (HIDE_SYMBOLS                        "When using gcc, hide symbols not on the public API"        ON)
 
 if (CMAKE_SYSTEM_NAME MATCHES "Linux|FreeBSD")
