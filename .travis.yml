@@ -47,6 +47,8 @@ addons:
       - g++-5
       - gcc-6
       - g++-6
+      - gcc-8
+      - g++-8
       - python2.7-dev
       - qtbase5-dev
       - libqt5opengl5-dev
@@ -72,6 +74,10 @@ matrix:
     - os: linux
       compiler: gcc
       env: GCC_VERSION=6
+
+    - os: linux
+      compiler: gcc
+      env: GCC_VERSION=8
 
   exclude:
     - os: osx
